@@ -2,7 +2,7 @@
 
 A single precipitation API, deployed as Vercel functions, serving both
 [`fog-light`](../fog-light) (Next.js/TS on Vercel) and
-[`weather-backtest`](../weather-backtest) (`rainhedge`, Python/Streamlit on Render).
+[`rainhedge`](../rainhedge) (Python/Streamlit on Render).
 
 It exists because NOAA CDO's rate limits — 5 req/sec, 10,000 req/day — attach to the
 *token*, not the caller. Two apps hitting NOAA independently can't coordinate that budget.
@@ -229,7 +229,7 @@ step. `clients/` is the source of truth; if you edit a vendored copy, edit the o
 | Client | Source | Vendored to |
 | --- | --- | --- |
 | TypeScript | `clients/ts/precip-client.ts` | `fog-light/src/lib/precip-client.ts` |
-| Python | `clients/py/precip_client.py` | `weather-backtest/src/rainhedge/precip_client.py` |
+| Python | `clients/py/precip_client.py` | `rainhedge/src/rainhedge/precip_client.py` |
 
 Both read `PRECIP_API_URL` and `PRECIP_API_TOKEN` from the environment and raise a typed
 error (`PrecipApiError`) carrying the service's `code`, so callers can tell

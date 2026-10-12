@@ -2,7 +2,7 @@
 
 A single precipitation API, deployed as Vercel functions, serving both
 [`fog-light`](../fog-light) (Next.js/TS on Vercel) and
-[`weather-backtest`](../weather-backtest) (`rainhedge`, Python/Streamlit on Render).
+[`rainhedge`](../rainhedge) (Python/Streamlit on Render).
 
 `README.txt` holds the original NOAA research spec. This document is what we're
 actually building, and where it deliberately diverges.
