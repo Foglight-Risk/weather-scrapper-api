@@ -10,3 +10,6 @@ data/
 
 # Playwright MCP run artifacts
 .playwright-mcp/
+
+# Gibson runtime state (loop journals, halt flags)
+gibson/
