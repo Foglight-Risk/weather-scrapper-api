@@ -1,0 +1,8 @@
+{
+  "$comment": "Gibson green gate — vendor-neutral. Empty string = step does not apply.",
+  "generate": "",
+  "typecheck": "npm run typecheck",
+  "lint": "",
+  "test": "npm test",
+  "build": ""
+}
